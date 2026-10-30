@@ -1,0 +1,70 @@
+{
+  "name": "@quantovainc/qpassport",
+  "version": "0.1.0",
+  "description": "Quantum secure electronic travel document records for issuing authorities and border control. Proves the issue, endorsement, border inspection, renewal and revocation of a travel document, with ML-DSA-65 under FIPS 204 and Quantova time proofs. No personal data ever leaves the party that holds it.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "wasm/qpassport_native.js",
+    "wasm/qpassport_native_bg.wasm",
+    "wasm/qpassport_native.d.ts",
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "NOTICE",
+    "AUTHORS"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "dependencies": {
+    "@quantovainc/qstamp": "0.6.14"
+  },
+  "keywords": [
+    "post-quantum",
+    "quantum-safe",
+    "passport",
+    "travel-document",
+    "border-control",
+    "identity",
+    "ml-dsa",
+    "fips-204",
+    "quantova"
+  ],
+  "license": "Apache-2.0 OR MIT",
+  "author": "Quantova Inc",
+  "homepage": "https://github.com/Quantova/QPassport",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quantova/QPassport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Quantova/QPassport/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "eslint": "9.39.1",
+    "eslint-plugin-security": "3.0.1",
+    "globals": "16.5.0"
+  }
+}
